@@ -11,8 +11,8 @@ signal = generate_sine_wave(frequency, duration, sample_rate)
 
 # Plot the sine wave
 plt.plot(signal)
-plt.title("Generated Sine Wave (5 Hz)")
-plt.xlabel("Sample Index")
-plt.ylabel("Amplitude")
+plt.title('Generated Sine Wave (5 Hz)')
+plt.xlabel('Sample Index')
+plt.ylabel('Amplitude')
 plt.grid()
 plt.show()
