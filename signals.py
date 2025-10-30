@@ -4,9 +4,25 @@ def generate_sine_wave(frequency, duration, sample_rate):
     t = np.linspace(0, duration, int(sample_rate * duration), endpoint=False)
     return np.sin(2 * np.pi * frequency * t)
 
+    """ 
+    generate a sine wave signal
+    frequency: frequency of the sine wave in Hz
+    duration: duration of signla in seconds
+    sample rate: number of samples per second
+
+    """
+
 def generate_square_wave(frequency, duration, sample_rate):
     t = np.linspace(0, duration, int(sample_rate * duration), endpoint=False)
     return np.sign(np.sin(2 * np.pi * frequency * t))
+
+    """
+    generate a square wave signal
+    frequency: frequency of the sine wave in Hz
+    duration: duration of signla in seconds
+    sample rate: number of samples per second
+
+    """
 
 def time_shift(signal, shift_samples):
     """
