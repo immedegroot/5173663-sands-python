@@ -8,6 +8,7 @@ def generate_sine_wave(frequency, duration, sample_rate):
     Frequency: frequency of the sine wave in Hz
     Duration: duration of signla in seconds
     Sample rate: number of samples per second
+    Output: a sine wave function
 
     """
 
@@ -19,6 +20,7 @@ def generate_square_wave(frequency, duration, sample_rate):
     Frequency: frequency of the sine wave in Hz
     Duration: duration of signla in seconds
     Sample rate: number of samples per second
+    Output: a square wave funtion
 
     """
 
