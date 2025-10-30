@@ -33,3 +33,15 @@ def time_scale(signal, scale_factor):
     indices = np.arange(0, len(signal), 1 / scale_factor)
     indices = indices[indices < len(signal)].astype(int)
     return signal[indices]
+
+def fourier_series_square(t, period, n_terms=10, amplitude=1.0):
+    """
+    Approximate a square wave using its sine Fourier series with N odd harmonics.
+    y(t) ≈ (4A/π) * Σ_{k=1..n_terms} sin[(2k-1) * ω0 * t] / (2k-1)
+    """
+    w0 = 2 * np.pi / period
+    y = np.zeros_like(t, dtype=float)
+    for k in range(1, n_terms + 1):
+        n = 2 * k - 1  # odd harmonic index: 1,3,5,...
+        y += np.sin(n * w0 * t) / n
+    return (4 * amplitude / np.pi) * y
