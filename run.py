@@ -17,7 +17,7 @@ Requirements:
 import matplotlib.pyplot as plt
 import numpy as np
 
-
+from signals import (
     generate_sine_wave,
     generate_square_wave,
     time_shift,
