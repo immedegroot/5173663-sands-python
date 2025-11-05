@@ -27,7 +27,7 @@ it also contains one frequency domain function:
 - make sure python, numpy and maplotlib are installed
 - run the signals: signals.py
 - run the tests: test.py
-- run.py will open plots of the original and scaled/shifted waves and the fourier series
+- run.py will open plots of the original and scaled/shifted waves and the fourier series and spectra
 
 
 
