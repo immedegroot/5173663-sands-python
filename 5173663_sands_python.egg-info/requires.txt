@@ -1,5 +1,0 @@
-numpy>=1.26
-matplotlib>=3.8
-
-[test]
-pytest>=8.0
